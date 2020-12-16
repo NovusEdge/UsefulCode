@@ -1,4 +1,11 @@
-#Prime Sieve : Implementation of 'Sieve of Eratosthenes' in python3
+def getDigitalRoot(n = None):
+    '''A Method to get the digital root of a number i.e. the sum of all its digits.'''
+    if n is None:
+        return None
+    digitList = [int(i) for i in str(n)] 
+    return sum(digitList)
+
+    #Prime Sieve : Implementation of 'Sieve of Eratosthenes' in python3
 
 def primeSieve(upperLim):
     '''Method to get a list of all prime numbers below upperLim'''

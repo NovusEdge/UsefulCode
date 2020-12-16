@@ -51,11 +51,8 @@ func Factors(n int) (res []int) {
 
 /*
 DigitalRoot : Returns the sum of all digits of a number
-
 * @param [n]: Number for which the digital root is calculated
-
 * @param [downToOne]: Pass true if wanting to trim the number down to a one digit number
-
 If [downToOne] is passed as true: (EXAMPLE) DigitalRoot(1987, true) => 1+9+8+7 = 25 -> 2+5 = 7
 */
 func DigitalRoot(n int, downToOne bool) (res int) {
@@ -108,13 +105,9 @@ func PrimeSieve(n int) []int {
 
 /*
 Fibonacci :Reports the nth term in the fibonacci series
-
 * Fibonacci(0) --> 1
-
 * Fibonacci(1) --> 1
-
 * Fibonacci(2) --> 2
-
 * ...
 */
 func Fibonacci(n int64) *big.Int {
