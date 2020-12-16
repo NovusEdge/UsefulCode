@@ -2,6 +2,7 @@ package sorting
 
 //BubbleSort sorts an array using the ***bubble sort algorithm***
 func BubbleSort(arr *[]int) {
+
 	for i := 0; i < len(*arr); i++ {
 		for j := 0; j < len(*arr)-1; j++ {
 			if (*(arr))[j] > (*(arr))[j+1] {
@@ -18,6 +19,7 @@ BubbleSorted sorts an array using the ***bubble sort algorithm*** and returns th
 */
 func BubbleSorted(arr []int) []int {
 	sortedArr := arr
+
 	for i := 0; i < len(sortedArr); i++ {
 		for j := 0; j < len(sortedArr)-1; j++ {
 			if sortedArr[j] > sortedArr[j+1] {
