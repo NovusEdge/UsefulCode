@@ -1,7 +1,7 @@
 package sorting
 
 //BubbleSort sorts an array using the ***bubble sort algorithm***
-func BubbleSort(arr *[]int) {
+func BubbleSort(arr *[]int64) {
 
 	for i := 0; i < len(*arr); i++ {
 		for j := 0; j < len(*arr)-1; j++ {
@@ -17,7 +17,7 @@ BubbleSorted sorts an array using the ***bubble sort algorithm*** and returns th
 
 ! Note: This function doesn't **modify** the array passed into the function
 */
-func BubbleSorted(arr []int) []int {
+func BubbleSorted(arr []int64) []int64 {
 	sortedArr := arr
 
 	for i := 0; i < len(sortedArr); i++ {
