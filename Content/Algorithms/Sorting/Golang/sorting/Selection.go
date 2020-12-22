@@ -1,7 +1,7 @@
 package sorting
 
 //SelectionSort sorts an array using the ***selection sort algorithm***
-func SelectionSort(arr *[]int) {
+func SelectionSort(arr *[]int64) {
 	for i := 0; i < len(*arr)-1; i++ {
 		for j := i + 1; j < len(*arr); j++ {
 			if (*arr)[j] < (*arr)[i] {
@@ -16,7 +16,7 @@ SelectionSorted sorts an array using the ***selection sort algorithm*** and retu
 
 ! Note: This function doesn't **modify** the array passed into the function
 */
-func SelectionSorted(arr []int) []int {
+func SelectionSorted(arr []int64) []int64 {
 	resArr := arr
 	for i := 0; i < len(resArr)-1; i++ {
 		for j := i + 1; j < len(resArr); j++ {

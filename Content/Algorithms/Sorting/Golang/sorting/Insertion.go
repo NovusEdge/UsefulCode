@@ -1,7 +1,7 @@
 package sorting
 
 //InsertionSort sorts an array using the ***insertion sort algorithm***
-func InsertionSort(arr *[]int) {
+func InsertionSort(arr *[]int64) {
 	for i := 0; i < len(*arr); i++ {
 		for j := 0; j < len(*arr); j++ {
 			if (*arr)[j] > (*arr)[i] {
@@ -16,7 +16,7 @@ InsertionSorted sorts an array using the ***insertion sort algorithm*** and retu
 
 ! Note: This function doesn't **modify** the array passed into the function
 */
-func InsertionSorted(arr []int) []int {
+func InsertionSorted(arr []int64) []int64 {
 	sortedArr := arr
 	for i := 0; i < len(sortedArr); i++ {
 		for j := 0; j < len(sortedArr); j++ {
