@@ -38,6 +38,7 @@ func CountSorted(arr []int64) []int64 {
 
 func _max(arr []int64) int64 {
 	maxVal := arr[0]
+
 	for _, i := range arr {
 		if i > maxVal {
 			maxVal = i
