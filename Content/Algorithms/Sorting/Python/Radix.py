@@ -1,4 +1,3 @@
-
 def CountingSort(arr, place):
     temp = arr
     size = len(temp)
@@ -30,7 +29,6 @@ def RadixSort( arr ):
     sortedArr = arr
     max_element = max( sortedArr )
 
-    
     place = 1
     while max_element // place > 0:
         CountingSort( sortedArr , place )
@@ -44,7 +42,7 @@ if __name__ == "__main__":
 
     # running test cases:
     testArr = [ randint(0, 1000) for i in range(50) ]
-    
+
     print("Unsorted Array: ", testArr, "\n"); start = time()
     print("Sorted Array: ", RadixSort(testArr), "\n")
     print("Time Taken: ", time() - start)
