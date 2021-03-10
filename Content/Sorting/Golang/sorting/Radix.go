@@ -15,7 +15,7 @@ func RadixSorted(arr []int64) []int64 {
 	maxElem := _max(res)
 
 	place := int64(1)
-	for int(maxElem/place) > 0 {
+	for int(maxElem/place) > 0 { //needs work ...
 		_countingSort(res, place)
 		place *= 10
 	}

@@ -7,9 +7,8 @@ import (
 	"strings"
 )
 
+// ToBinary converts data into respective binary representation of it
 /*
-ToBinary converts data into respective binary representation of it
-
 mainly uses the ***strconv*** lib: https://golang.org/pkg/strconv/#pkg-overview
 
 * @param prec: for precision in converting floatpoint numbers to binary

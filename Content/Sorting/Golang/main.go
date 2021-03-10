@@ -48,4 +48,10 @@ func main() {
 	sorting.RadixSort(&unsorted)
 	fmt.Println("Using the 'Sort' Method:   ", unsorted)
 
+	fmt.Println("\nSorting with Merge Sort")
+	unsorted = []int64{1, 4, 6, 43, 2, 4, 57, 8, 53, 1, 10, 123, 20, 24, 3}
+	fmt.Println("Original: ", unsorted)
+	// fmt.Println("Using the 'Sorted' Method: ", sorting.MergeSorted(unsorted))
+	sorting.MergeSort(&unsorted)
+	fmt.Println("Using the 'Sort' Method:   ", unsorted)
 }
